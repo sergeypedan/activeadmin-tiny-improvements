@@ -18,7 +18,9 @@ task :debug do
 	require "sassc"
 	require "rails"
 
-	path = Activeadmin::TinyImprovements.stylesheets_path
+	gem_path ||= File.expand_path "../../app", File.dirname(__FILE__)
+	assets_path ||= File.join gem_path, "assets"
+	path = File.join assets_path, "stylesheets"
 	entrypoins = %w(_activeadmin-tiny-improvements)
 
 	entrypoins.each do |file|

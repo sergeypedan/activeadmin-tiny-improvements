@@ -4,9 +4,8 @@
 # @see https://guides.rubyonrails.org/engines.html Rails guide on engines
 #
 module Activeadmin
-	class Engine < ::Rails::Engine
-		initializer "activeadmin_tiny_improvements.assets" do |app|
-			app.config.assets.paths << root.join("assets", "stylesheets").to_s
+	module TinyImprovements
+		class Engine < ::Rails::Engine
 		end
 	end
 end

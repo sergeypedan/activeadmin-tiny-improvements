@@ -7,7 +7,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "activeadmin_dark_color_scheme"
+gem "activeadmin_tiny_improvements"
 ```
 
 Import our Sass file “activeadmin-tiny-improvements” in your CSS entrypoint that compiles ActiveAdmin CSS files:
